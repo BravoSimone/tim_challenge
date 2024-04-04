@@ -13,6 +13,7 @@ gem "tzinfo-data", platforms: %i[ windows jruby ]
 gem "bootsnap", require: false
 
 gem "kaminari"
+gem "sass-rails"
 
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ]
