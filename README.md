@@ -6,7 +6,7 @@
   - [x] enum category
 
 - [x] Frontend html e css, senza uso di javascript
-- [ ] Pagina index con un bottone per aggiungere una quote random da https://api.api-ninjas.com/v1/quotes
+- [x] Pagina index con un bottone per aggiungere una quote random da https://api.api-ninjas.com/v1/quotes
 - [x] Paginazione e ordinamento nella index
-- [ ] La quote deve essere scaricata asicronamente
+- [x] La quote deve essere scaricata asicronamente
 - [ ] Testare l'applicazione
