@@ -1,0 +1,72 @@
+@font-face {
+  font-family: arimo;
+  src: url(fonts/arimo.ttf);
+}
+
+:root {
+  --red: #A92B25;
+  --green: #61A925;
+  --blue: #25A3A9;
+  --grey: #b9b9b9;
+  --dark-grey: #666666;
+}
+
+body {
+  font-family: arimo;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: var(--red);
+  font-size: 50px;
+  font-weight: 100;
+}
+
+h2 {
+  color: var(--red);
+  font-size: 40px;
+  font-weight: 100;
+  text-align: center;
+}
+
+h3 {
+  color: var(--red);
+  font-size: 25px;
+  font-weight: 100;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 100;
+}
+
+a, button, input[type=submit], input[type=button] {
+  background-color: white;
+  color: var(--blue);
+  padding: 5px;
+  border: 1px solid;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: arimo;
+  font-size: 14px;
+  font-weight: 100;
+  margin: 10px 5px
+}
+
+a.confirm, button.confirm, input.confirm {
+  color: var(--green);
+}
+
+a.error, button.error, input.error {
+  color: var(--red);
+}
+
+div.quotes {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin: 0 auto;
+}

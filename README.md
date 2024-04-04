@@ -5,7 +5,7 @@
   - [x] text author
   - [x] enum category
 
-- [ ] Frontend html e css, senza uso di javascript
+- [x] Frontend html e css, senza uso di javascript
 - [ ] Pagina index con un bottone per aggiungere una quote random da https://api.api-ninjas.com/v1/quotes
 - [ ] Paginazione e ordinamento nella index
 - [ ] La quote deve essere scaricata asicronamente
