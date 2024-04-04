@@ -1,9 +1,9 @@
 # Consegna
 
-- [ ] Uno scaffold completo per un modello che abbia 3 campi
-  - [ ] text quote
-  - [ ] text author
-  - [ ] enum category
+- [x] Uno scaffold completo per un modello che abbia 3 campi
+  - [x] text quote
+  - [x] text author
+  - [x] enum category
 
 - [ ] Frontend html e css, senza uso di javascript
 - [ ] Pagina index con un bottone per aggiungere una quote random da https://api.api-ninjas.com/v1/quotes
