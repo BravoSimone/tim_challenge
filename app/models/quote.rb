@@ -1,4 +1,6 @@
 class Quote < ApplicationRecord
+  paginates_per 15
+
   # WARNING! ATTENZIONE!
   # Don't change any number from the enum. Any new category must be appended at
   # the end with a new number. In case we want to change the numbers to sort

@@ -9,8 +9,10 @@
     <div>
       <%= render quote %>
       <p>
-        <%= link_to "Show this quote", quote %>
+        <%= link_to "Show this quote", quote_path(quote, page: params[:page]) %>
       </p>
     </div>
   <% end %>
 </div>
+
+<%= paginate @quotes %>

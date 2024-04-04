@@ -2,7 +2,7 @@ class QuotesController < ApplicationController
   before_action :set_quote, only: %i[ show edit update destroy ]
 
   def index
-    @quotes = Quote.all
+    @quotes = Quote.order(id: :desc).page(page_params[:page])
   end
 
   def show; end
@@ -25,7 +25,7 @@ class QuotesController < ApplicationController
 
   def update
     if @quote.update(quote_params)
-      redirect_to quote_url(@quote), notice: "Quote was successfully updated."
+      redirect_to quote_url(@quote, page_params[:page]), notice: "Quote was successfully updated."
     else
       render :edit, status: :unprocessable_entity
     end
@@ -38,11 +38,16 @@ class QuotesController < ApplicationController
   end
 
   private
-    def set_quote
-      @quote = Quote.find(params[:id])
-    end
 
-    def quote_params
-      params.require(:quote).permit(:text, :author, :category)
-    end
+  def set_quote
+    @quote = Quote.find(params[:id])
+  end
+
+  def quote_params
+    params.require(:quote).permit(:text, :author, :category)
+  end
+
+  def page_params
+    params.permit(:page)
+  end
 end
