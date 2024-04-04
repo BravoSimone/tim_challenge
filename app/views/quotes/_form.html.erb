@@ -18,12 +18,12 @@
 
   <div>
     <%= form.label :author, style: "display: block" %>
-    <%= form.text_area :author %>
+    <%= form.text_area :author, size: "40x10" %>
   </div>
 
   <div>
     <%= form.label :category, style: "display: block" %>
-    <%= form.number_field :category %>
+    <%= form.select :category, Quote.categories.keys %>
   </div>
 
   <div>
