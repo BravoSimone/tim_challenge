@@ -1,6 +1,7 @@
 require 'net/http'
 
-class QuoteDownloaderJob < ApplicationJob
+class QuoteDownloaderJob
+  include Sidekiq::Job
   queue_as :default
 
   def perform
