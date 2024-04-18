@@ -14,6 +14,9 @@ gem "bootsnap", require: false
 
 gem "kaminari"
 gem "sass-rails"
+gem "turbo-rails"
+gem "redis", "~> 4.0"
+gem "sidekiq"
 
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ]
